@@ -62,27 +62,7 @@ public class FirstFragment extends Fragment {
         view.findViewById(R.id.lbTtitle).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAuth.createUserWithEmailAndPassword("juan.sandino.ba@gmail.com", "sandino420")
-                        .addOnCompleteListener((Activity) getContext(), new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
-                                    Log.d("", "createUserWithEmail:success");
-                                    FirebaseUser user = mAuth.getCurrentUser();
-                                    Toast.makeText( getActivity().getApplicationContext()  , "usuario creado ", Toast.LENGTH_SHORT).show();
-                                    refreshUI(user);
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Log.w("", "createUserWithEmail:failure", task.getException());
-                                    Toast.makeText( getContext(), "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
-                                    refreshUI(null);
-                                }
 
-                                // ...
-                            }
-                        });
             }
         });
         view.findViewById(R.id.btnLogin).setOnClickListener(new View.OnClickListener() {
