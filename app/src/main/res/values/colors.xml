@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="fragment.one.boton">
+        #3498DB
+    </color>
+    <color name="fragment.one.text.button">#17202A</color>
+    <color name="fragment.one.background"> #2E4053 </color>
+
+</resources>

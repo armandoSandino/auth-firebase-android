@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "38694330929",
+    "firebase_url": "https://tiste-nic.firebaseio.com",
+    "project_id": "tiste-nic",
+    "storage_bucket": "tiste-nic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38694330929:android:e6701f5c68bf28a6d26b10",
+        "android_client_info": {
+          "package_name": "com.sandino.firebaseauthui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38694330929-r2l30k8fn0t1jh9bqbnq3rt244hnnitp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgGUMof-QD7ltYSFeDmJf-r6HvGqaJ8Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38694330929-r2l30k8fn0t1jh9bqbnq3rt244hnnitp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
