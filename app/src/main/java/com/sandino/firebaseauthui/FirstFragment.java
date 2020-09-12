@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -45,14 +47,17 @@ public class FirstFragment extends Fragment {
         final TextInputEditText ctEmail = view.findViewById(R.id.ctEmail);
         final TextInputEditText ctPass = view.findViewById(R.id.ctPassword );
 
-        /*
-        view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
+        final NavController navController = Navigation.findNavController( view  );
+
+        view.findViewById(R.id.btnRegister).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_FirstFragment_to_registerAccount);
+
             }
-        });*/
+        });
 
         view.findViewById(R.id.lbTtitle).setOnClickListener(new View.OnClickListener() {
             @Override

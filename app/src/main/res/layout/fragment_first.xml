@@ -16,7 +16,7 @@
         android:text="@string/next"
         android:background="@color/fragment.one.boton"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:visibility="gone"
         />
     <TextView
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="10dp"
         android:textAlignment="center"
         android:textColor="@color/fragment.one.boton"
@@ -95,4 +95,17 @@
         android:layout_marginRight="30dp"
         >
     </Button>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fragment.one.boton"
+        android:text="Create account"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    </Button>
+
 </LinearLayout>
