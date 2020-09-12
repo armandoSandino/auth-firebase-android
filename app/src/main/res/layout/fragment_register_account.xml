@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FRAGMENTS.RegisterAccount">
+    tools:context=".FRAGMENTS.RegisterAccount"
+    android:background="@color/fragment.one.background"
+    android:orientation="vertical"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/lbTtitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/fragment.one.boton"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Register account"
+        />
 
-</FrameLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
+        android:padding="1dp"
+        android:hint=" Email "
+        app:errorTextAppearance="@style/EditTextError"
+        app:hintTextAppearance="@style/AppTheme.FloatingLabel"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ctEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Email "
+            android:textColorHint="#FDFEFE"
+            android:inputType="textEmailAddress"
+            android:textColor="#FDFEFE"
+            android:theme="@style/EditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="8dp"
+        android:padding="1dp"
+        android:hint=" Password "
+        app:errorTextAppearance="@style/EditTextError"
+        app:hintTextAppearance="@style/AppTheme.FloatingLabel"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ctPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Password "
+            android:textColorHint="#FDFEFE"
+            android:inputType="textPersonName"
+            android:textColor="#FDFEFE"
+            android:theme="@style/EditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fragment.one.boton"
+        android:text="Register"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    </Button>
+</LinearLayout>
