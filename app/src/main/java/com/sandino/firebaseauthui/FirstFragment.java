@@ -45,13 +45,14 @@ public class FirstFragment extends Fragment {
         final TextInputEditText ctEmail = view.findViewById(R.id.ctEmail);
         final TextInputEditText ctPass = view.findViewById(R.id.ctPassword );
 
+        /*
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FirstFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
-        });
+        });*/
 
         view.findViewById(R.id.lbTtitle).setOnClickListener(new View.OnClickListener() {
             @Override
