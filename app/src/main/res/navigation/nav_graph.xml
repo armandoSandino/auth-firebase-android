@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_registerAccount"
             app:destination="@id/registerAccount" />
+        <action
+            android:id="@+id/action_FirstFragment_to_home2"
+            app:destination="@id/home2" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -28,4 +31,9 @@
             android:id="@+id/action_registerAccount_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.sandino.firebaseauthui.FRAGMENTS.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

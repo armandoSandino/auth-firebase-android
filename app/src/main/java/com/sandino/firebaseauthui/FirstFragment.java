@@ -25,6 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class FirstFragment extends Fragment {
     private FirebaseAuth mAuth;
+    NavController navController;
 
     @Override
     public View onCreateView(
@@ -47,7 +48,7 @@ public class FirstFragment extends Fragment {
         final TextInputEditText ctEmail = view.findViewById(R.id.ctEmail);
         final TextInputEditText ctPass = view.findViewById(R.id.ctPassword );
 
-        final NavController navController = Navigation.findNavController( view  );
+        navController = Navigation.findNavController( view  );
 
         view.findViewById(R.id.btnRegister).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,8 +84,9 @@ public class FirstFragment extends Fragment {
                             Toast.makeText( getActivity(), "Welcome", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
                             refreshUI(user);
+                            navController.navigate(R.id.action_FirstFragment_to_home2);
                         } else {
-                            Toast.makeText( getActivity() , "Credenciales incorrectas ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText( getActivity() , "Incorrect credentials\n ", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -104,8 +106,7 @@ public class FirstFragment extends Fragment {
             // authenticate with your backend server, if you have one. Use
             // FirebaseUser.getIdToken() instead.
             String uid = user.getUid();
-
-            Toast.makeText(getActivity(), ""+ uid, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getActivity(), ""+ uid, Toast.LENGTH_SHORT).show();
         }
     }
 
