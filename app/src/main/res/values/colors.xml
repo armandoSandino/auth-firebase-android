@@ -9,4 +9,7 @@
     <color name="fragment.one.text.button">#17202A</color>
     <color name="fragment.one.background"> #2E4053 </color>
 
+    <color name="white.letter">#FBFCFC</color>
+    <color name="black.letter">#000000</color>
+
 </resources>

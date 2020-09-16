@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#229954"
+    >
+    <ImageView
+        android:id="@+id/imv_item_foto_casa"
+        android:src="@android:drawable/ic_dialog_info"
+        android:layout_width="280dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:id="@+id/lb_item_ubicacion_casa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Barrio Guadalupe, frente a casa pellas"
+            android:textColor="@color/white.letter"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/lb_item_precio_casa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C$3,500/mes"
+            android:textColor="@color/white.letter"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lb_item_num_habitaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="4 cuartos. 70 m2"
+        android:textColor="@color/white.letter"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="2"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            app:cardBackgroundColor="#FF00CC"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="15dp"
+            app:contentPaddingTop="3dp"
+            app:contentPaddingBottom="3dp"
+            app:contentPaddingLeft="3dp"
+            app:contentPaddingRight="3dp"
+            >
+            <Button
+                android:id="@+id/bt_item_llamar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:text="2345678"
+                android:textColor="@color/black.letter"
+                android:background="#FF00CC"
+                android:drawableLeft="@android:drawable/stat_sys_phone_call"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            app:cardBackgroundColor="#FF00CC"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="15dp"
+            app:contentPaddingTop="3dp"
+            app:contentPaddingBottom="3dp"
+            app:contentPaddingLeft="3dp"
+            app:contentPaddingRight="3dp"
+            >
+            <Button
+                android:id="@+id/bt_item_contactar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:text="Contactar"
+                android:textColor="@color/black.letter"
+                android:background="#FF00CC"
+                android:drawableLeft="@android:drawable/sym_contact_card"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
